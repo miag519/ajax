@@ -10,9 +10,13 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    
      <script>
-       $(document).ready(function(){
-          //TODO: add your code here
-      });
+$(document).ready(function(){
+    //  Get value on button click and show alert
+    $("#myBtn").click(function(){
+        var str = $("#myInput").val();
+        $("#div1").load(val());
+    });
+});
      </script>
   </head>
   <body>
@@ -27,7 +31,9 @@
    <div id="div2">
       <h2>This text isn't updated.</h2>
     </div>
+	
+    <input type="text" id="myInput">
+    <button type="button" id="myBtn">Show Value</button>
 
-   
   </body>
 </html>
